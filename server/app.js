@@ -1,11 +1,10 @@
-const express = require('express')
-const app = express()
-const port = 3001
+const express = require('express');
+const app = express();
+const port = 3001;
 
-app.get('/', (req, res) => {
-  res.send('This is gonna be great');
+app.get('/', (req,res) => {
+  res.send('Root req.');
 })
-
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-})
+  console.log(`Todo list server is listening on port ${port}`);
+});
